@@ -1,0 +1,16 @@
+[package]
+name = "cargo-ci-cache-clean"
+version = "0.0.1"
+description = "Clean up unnecessary Cargo artifacts to improve CI caching performance"
+authors = ["Rob Ede <robjtede@icloud.com>"]
+keywords = ["ci", "cache", "clean", "cargo"]
+repository = "https://github.com/x52dev/cargo-ci-cache-clean"
+license = "MIT OR Apache-2.0"
+edition = "2021"
+rust-version = "1.58"
+
+[dependencies]
+home = "0.5"
+env_logger = "0.10"
+tracing = { version = "0.1.30", features = ["log", "release_max_level_debug"] }
+walkdir = "2"
