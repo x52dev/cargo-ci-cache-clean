@@ -13,6 +13,9 @@ In GitHub Actions:
   uses: taiki-e/install-action@v2
   with:
     tool: cargo-ci-cache-clean
+
+- name: CI cache clean
+  run: cargo-ci-cache-clean
 ```
 
 With [`cargo-binstall`]:
