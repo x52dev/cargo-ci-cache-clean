@@ -1,6 +1,6 @@
 [package]
 name = "cargo-ci-cache-clean"
-version = "0.0.2"
+version = "0.0.3"
 description = "Clean up unnecessary Cargo artifacts to improve CI caching performance"
 authors = ["Rob Ede <robjtede@icloud.com>"]
 keywords = ["ci", "cache", "clean", "cargo"]
