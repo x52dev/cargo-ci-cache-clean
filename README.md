@@ -19,7 +19,7 @@ $ cargo install cargo-ci-cache-clean
 # Usage
 
 ```console
-cargo-ci-cache-clean [--stats=<bool>]
+cargo-ci-cache-clean
 ```
 
 [`cargo-binstall`]: https://github.com/cargo-bins/cargo-binstall

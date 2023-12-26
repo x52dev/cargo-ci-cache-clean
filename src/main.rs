@@ -5,8 +5,6 @@
 
 use std::{fs, path::Path, process};
 
-use walkdir::WalkDir;
-
 fn main() {
     env_logger::init_from_env(env_logger::Env::new().default_filter_or("info"));
 
@@ -40,7 +38,7 @@ fn main() {
 }
 
 fn dir_size(path: &Path) -> u64 {
-    WalkDir::new(path)
+    walkdir::WalkDir::new(path)
         .into_iter()
         .filter_map(|entry| entry.ok())
         .filter_map(|entry| fs::metadata(entry.path()).ok())
