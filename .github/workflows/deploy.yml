@@ -34,12 +34,12 @@ jobs:
           - { os: ubuntu-22.04, target: x86_64-unknown-freebsd }
           - { os: ubuntu-22.04, target: x86_64-unknown-linux-gnu }
           - { os: ubuntu-22.04, target: x86_64-unknown-linux-musl }
-          # - { os: windows-2022, target: aarch64-pc-windows-msvc } # ring not supported
+          - { os: windows-2022, target: aarch64-pc-windows-msvc }
           - { os: windows-2022, target: x86_64-pc-windows-msvc }
 
     name: Deploy (${{ matrix.target }})
     runs-on: ${{ matrix.os }}
-    if: github.repository_owner == 'robjtede' && startsWith(github.event.release.name, 'v')
+    if: github.repository_owner == 'x52dev' && startsWith(github.event.release.name, 'v')
     timeout-minutes: 60
 
     steps:
