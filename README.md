@@ -4,6 +4,17 @@
 
 # Install
 
+In GitHub Actions:
+
+```yaml
+# jobs.<job_name>.steps:
+
+- name: Install cargo-ci-cache-clean
+  uses: taiki-e/install-action@v2
+  with:
+    tool: cargo-ci-cache-clean
+```
+
 With [`cargo-binstall`]:
 
 ```console
