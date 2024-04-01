@@ -63,7 +63,7 @@ jobs:
         run: echo "RUSTFLAGS=${RUSTFLAGS} -C target-feature=+crt-static" >> "${GITHUB_ENV}"
 
       - name: Build and upload to release
-        uses: taiki-e/upload-rust-binary-action@v1.18.0
+        uses: taiki-e/upload-rust-binary-action@v1.19.1
         with:
           bin: cargo-ci-cache-clean
           target: ${{ matrix.target }}
