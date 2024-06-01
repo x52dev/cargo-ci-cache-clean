@@ -50,7 +50,7 @@ jobs:
           cache: false
 
       - if: startsWith(matrix.os, 'ubuntu') && !endsWith(matrix.target, '-musl')
-        uses: taiki-e/setup-cross-toolchain-action@v1.21.0
+        uses: taiki-e/setup-cross-toolchain-action@v1.22.0
         with:
           target: ${{ matrix.target }}
 
