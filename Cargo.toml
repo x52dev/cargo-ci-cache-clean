@@ -11,8 +11,8 @@ rust-version = "1.58"
 
 [dependencies]
 home = "0.5"
-env_logger = "0.10"
-tracing = { version = "0.1.30", features = ["log", "release_max_level_debug"] }
+tracing = { version = "0.1.30", features = ["release_max_level_debug"] }
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 walkdir = "2"
 
 [profile.release]

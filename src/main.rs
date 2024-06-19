@@ -5,8 +5,17 @@
 
 use std::{fs, path::Path, process};
 
+use tracing::level_filters::LevelFilter;
+use tracing_subscriber::EnvFilter;
+
 fn main() {
-    env_logger::init_from_env(env_logger::Env::new().default_filter_or("info"));
+    tracing_subscriber::fmt()
+        .with_env_filter(
+            EnvFilter::builder()
+                .with_default_directive(LevelFilter::INFO.into())
+                .from_env_lossy(),
+        )
+        .init();
 
     let cargo_home = match home::cargo_home() {
         Ok(cargo_home) => cargo_home,
