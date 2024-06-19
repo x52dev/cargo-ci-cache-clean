@@ -2,6 +2,10 @@
 
 ## 0.0.3
 
+### Features
+
+- Begin attesting releases made from CI.
+
 ## 0.0.2
 
 ### Features
