@@ -13,7 +13,7 @@ dependencies = [
 
 [[package]]
 name = "cargo-ci-cache-clean"
-version = "0.0.3"
+version = "0.0.4"
 dependencies = [
  "home",
  "tracing",
