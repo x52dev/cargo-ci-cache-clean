@@ -2,6 +2,8 @@
 
 > Clean up unnecessary Cargo artifacts to improve CI caching performance
 
+[![Chat on Discord](https://img.shields.io/discord/1554698838651179088?label=chat&logo=discord)](https://discord.gg/STmPAGnPNz)
+
 # Install
 
 In GitHub Actions:
