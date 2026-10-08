@@ -2,6 +2,7 @@
 name = "cargo-ci-cache-clean"
 version = "0.0.5"
 description = "Clean up unnecessary Cargo artifacts to improve CI caching performance"
+categories = ["development-tools::build-utils", "caching", "command-line-utilities"]
 authors = ["Rob Ede <robjtede@icloud.com>"]
 keywords = ["ci", "cache", "clean", "cargo"]
 repository = "https://github.com/x52dev/cargo-ci-cache-clean"
